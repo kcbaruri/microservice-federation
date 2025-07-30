@@ -9,8 +9,11 @@ import graphql.execution.instrumentation.InstrumentationState;
 import graphql.execution.instrumentation.parameters.InstrumentationFieldFetchParameters;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
 import java.util.concurrent.CompletableFuture;
 
+@Component
 public class TracingInstrumentation implements Instrumentation {
 
     private static final Logger log = LoggerFactory.getLogger(TracingInstrumentation.class);
